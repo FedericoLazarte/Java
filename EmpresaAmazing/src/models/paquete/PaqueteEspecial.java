@@ -39,8 +39,7 @@ public class PaqueteEspecial extends Paquete {
 	
 	@Override 
 	public boolean equals(Object other) {
-		if (this == other) return true;
-		if (other == null || this.getClass() != other.getClass()) return false;
+
 		if (!super.equals(other)) return false;
 		PaqueteEspecial paqEs = (PaqueteEspecial) other;
 		return this.porcentaje == paqEs.porcentaje && this.adicional == paqEs.adicional;

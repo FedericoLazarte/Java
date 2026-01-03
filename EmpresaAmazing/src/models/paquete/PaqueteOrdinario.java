@@ -30,8 +30,6 @@ public class PaqueteOrdinario extends Paquete {
 	
 	@Override
 	public boolean equals(Object other) {
-		if (this == other) return true;
-		if (other == null || this.getClass() != other.getClass()) return false;
 		if (!super.equals(other)) return false;
 		PaqueteOrdinario paqOr = (PaqueteOrdinario) other;
 		return this.costoEnvio == paqOr.costoEnvio;
